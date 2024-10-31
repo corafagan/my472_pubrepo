@@ -369,6 +369,11 @@ data(mtcars)
 
 # Create a column that adds the values of the &#39;gear&#39; and &#39;carb&#39; variables together
 
+data = function(data){
+  data %&gt;%
+    mutate(gear_carb = gear + carb)
+}
+
 data_new = function(data){
   data %&gt;%
     mutate(gear_carb = gear * carb)

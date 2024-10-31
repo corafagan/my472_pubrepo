@@ -29,7 +29,7 @@ data(mtcars)
 
 data = function(data){
   data %>%
-    mutate(gear_carb = gear + carb)
+    mutate(gear_carb = gear * carb)
 }
 
 # Run the function on the mtcars df 

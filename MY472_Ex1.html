@@ -369,14 +369,14 @@ data(mtcars)
 
 # Create a column that adds the values of the &#39;gear&#39; and &#39;carb&#39; variables together
 
-data = function(data){
+data_new = function(data){
   data %&gt;%
     mutate(gear_carb = gear * carb)
 }
 
 # Run the function on the mtcars df 
 # Save it as a mutated version of the df called mtcars_mutate
-mtcars_mutate = data(mtcars)
+mtcars_mutate = data_new(mtcars)
 
 # Return the output 
 print(head(mtcars_mutate))</code></pre>

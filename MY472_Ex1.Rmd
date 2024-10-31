@@ -27,6 +27,11 @@ data(mtcars)
 
 # Create a column that adds the values of the 'gear' and 'carb' variables together
 
+data = function(data){
+  data %>%
+    mutate(gear_carb = gear + carb)
+}
+
 data_new = function(data){
   data %>%
     mutate(gear_carb = gear * carb)
